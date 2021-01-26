@@ -16,3 +16,10 @@
 5.  important https://stackoverflow.com/questions/24341767/execution-of-postgresql-by-a-user-with-administrative-permissions-is-not-permitt
 6.  ```net user postgres your_password /add``` then ```runas /user:postgres cmd.exe```
 7. https://sqlbackupandftp.com/blog/setting-windows-path-for-postgres-tools
+
+
+# how to start it
+
+1.  ```cd project folder```
+2.  ``` python -m venv env ``` 
+3.  ```source env/Scripts/activate```
