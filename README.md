@@ -5,6 +5,7 @@
 
 1. https://realpython.com/flask-by-example-part-1-project-setup/
 2. https://stackoverflow.com/questions/9794413/failed-to-push-some-refs-to-githeroku-com
+3. https://wtforms.readthedocs.io/en/2.3.x/fields/ (fileds and inputs)
 
 
 # create db and Notes
@@ -35,3 +36,5 @@ db = SQLAlchemy(app)
 2.  ``` python -m venv env ``` 
 3.  ```source env/Scripts/activate```
 4.  ```export FLASK_APP=myapp```
+
+
