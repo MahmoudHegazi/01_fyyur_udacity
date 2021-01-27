@@ -21,6 +21,8 @@
 ```
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://purple_fish:123@localhost:5432/fyyur'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#this to show arabic address 
+app.config['JSON_AS_ASCII'] = False
 app.config["IMAGE_UPLOADS"] = 'uploads'
 db = SQLAlchemy(app)
 ```
