@@ -34,11 +34,19 @@ db = SQLAlchemy(app)
 
 
 # Join Notes and backref:
-    ```shows = db.relationship('Artist', secondary=show, backref=db.backref('venue', lazy=True))```
-    1. artist here not mean relation bettwen the Artist for each venue
-    2. it define which table to join the join statment 3 tables should be givin in this case
-    3. if there are a relation bettween the Venue and artist like store and item no need to define
-    4. shows var in Artist but here we have diffrent 2 tables each one should give show backref
+  did it with the normal logical good not error way no bakcref or any thing venue = relation
+  
+  ```python
+  # way can human and computer understand easy
+    artist_id = db.Column(db.String, db.ForeignKey('Artist.id') ,nullable=False)
+    artist = db.relationship(Artist)
+    venue_id = db.Column(db.Integer, db.ForeignKey('Venue.id') ,nullable=False)
+    venue = db.relationship(Venue)
+    
+    # shows = db.relationship('Venue', secondary=show, backref=db.backref('no_ref_return_from_me', lazy=True)) (x) wrong way
+
+  
+  ```
     
 # how to start it
 
