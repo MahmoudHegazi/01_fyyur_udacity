@@ -3,6 +3,7 @@
 
     
 # how to start it
+0. https://stackoverflow.com/questions/8921188/issue-with-virtualenv-cannot-activate
 
 1.  ```cd project folder```
 2.  ```python -m virtualenv env```
