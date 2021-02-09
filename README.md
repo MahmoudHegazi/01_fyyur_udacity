@@ -15,6 +15,8 @@
 8.  ``` create Database with name fyyur and db user with previelegs with name purple_fish and password 123```
 9.  ``` psql -h localhost -d fyyur -U purple_fish to connect #db connect ```
 10. ```visit 127.0.0.1:5000```
+11. to give the user connect access ```GRANT CONNECT ON DATABASE test_db TO tester;```
+12. To Access DB with that user just use ```psql dbname username``` enter password for the user and hf
 
 # Database Info
 
